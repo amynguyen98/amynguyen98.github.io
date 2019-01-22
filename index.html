@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+
+The mis2402template is based on the
+AdminLTE template (version 2.4.5) found here: https://adminlte.io/
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>mis2402template</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Shafer has chosen the skin-red for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect. -->
+  <link rel="stylesheet" href="dist/css/skins/skin-cherry.css">
+
+  <!-- mis2402 stylesheet -->
+  <link rel="stylesheet" href="css/app.css">
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <!-- REQUIRED JS SCRIPTS -->
+
+    <!-- jQuery 3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <!-- mis2402 code -->    
+    <script src="js/app.js"></script>
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition skin-cherry sidebar-collapse">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>M</b>IS</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>MIS</b>2402</span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+        <li ><a href="#wrapperlogin" class="mis2402navlink"><i class="fa fa-user"></i> <span>Login</span></a></li>
+        <li ><a href="#wrapperquote" class="mis2402navlink"><i class="fa fa-quote-right"></i> <span>Quote of the Day</span></a></li>
+        <li ><a href="#wrapperchange" class="mis2402navlink"><i class="fa fa-money"></i> <span>Change Calculator</span></a></li>
+		<li ><a href="#wrappermyfriend" class="mis2402navlink"><i class="fa fa-users"></i> <span>My Friend</span></a></li>
+
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- The user image in the navbar-->
+              <img src="dist/img/user1-128x128.jpg" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs">Sam Student</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- The user image in the menu -->
+              <li class="user-header">
+                <img src="dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
+                <p>
+                  Sam Student
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Sam Student</p>
+         </div>
+      </div>
+      
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">Navigation</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li ><a href="#wrapperlogin" class="mis2402navlink"><i class="fa fa-user"></i> <span>Login</span></a></li>
+        <li ><a href="#wrapperquote" class="mis2402navlink"><i class="fa fa-quote-right"></i> <span>Quote of the Day</span></a></li>
+        <li ><a href="#wrapperchange" class="mis2402navlink"><i class="fa fa-money"></i> <span>Change Calculator</span></a></li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+          
+  <!-- Content Wrapper Login. Contains login page content -->
+  <div class="content-wrapper" id="wrapperlogin" style="display:none;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Login
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+      <!--------------------------
+        | Login Page Content Here |
+        -------------------------->
+        <!-- /.box-header -->
+        <div class="box box-warning">
+          <div class="box-header with-border">
+            <h3 class="box-title">Please provide the following information</h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <form role="form">
+              <!-- text input -->
+              <div class="form-group">
+                <label for="idUsername">Email</label>
+                <input id="idUsername" type="email" class="form-control" required autofocus
+                    placeholder="Your email ..."  >
+                <label for="idPassword">Password</label>
+                <input id="idPassword" type="text" class="form-control" required
+                    placeholder="Your password ..." >
+              </div>
+            </form>
+          </div>
+          <div class="box-footer">
+            <button id="btnLoginContinue" type="button" class="btn btn-primary" id="look_at_me" disabled>Continue</button>
+        </div>  
+        </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper Login -->
+  
+  <!-- Content Wrapper Quote of the day. Contains quote of the day page content -->
+  <div class="content-wrapper" id="wrapperquote" style="display:none;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Quote of the day
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+      <!--------------------------
+        | Login Page Content Here |
+        -------------------------->
+        <!-- /.box-header -->
+        <div class="box box-warning">
+          <div class="box-header with-border">
+            <h3 class="box-title">Quote of the day</h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <p id="quote_for_today">&nbsp;</p>
+			<p id="who_said_it">&nbsp;</p>
+			<form id="frm_quote_to_share">
+				<input type="hidden" id="share_with_name">
+				<input type="hidden" id="phone" name="phone">
+				<input type="hidden" id="message" name="message">
+				<input type="hidden" id="key" name="key" value="2a45e0c669ef25b50efc080afcd309fe67112409k1FQu7NIwmsjtCZlKskagTDxy">
+			</form>
+          </div>
+		<div class="box-footer">
+            <button id="btnGetNewQuote" type="button" class="btn btn-primary" >Get New Quote</button>&nbsp;
+            <button id="btnShareQuote" type="button" class="btn btn-default" >Share It with a friend</button>&nbsp;
+			<span class='message-full bg bg-danger'></span>
+			<span class='message-full bg bg-success'></span>
+        </div> 
+        </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper quote of the day -->
+
+<!-- Content Wrapper Change Calculator. -->
+<div class="content-wrapper" id="wrapperchange" style="display:none;">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Change Calculator
+    </h1>
+  </section>
+
+  <!-- Main content -->
+  <section class="content container-fluid">
+
+    <!--------------------------
+      | Change Calculator Content Here |
+      -------------------------->
+      <!-- /.box-header -->
+      <div class="box box-warning">
+        <div class="box-header with-border">
+          <h3 class="box-title">Change Calculator</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <label>Enter number of cents (0-99):</label>
+				<input type="text" id="cents"><br>
+				
+				<label>&nbsp;</label>
+				<input type="button" value="Calculate" name="calculate" id="calculate" class="btn btn-primary"><br>
+
+				<span id="my_message"> </span>
+				<br><br>
+
+				<label>Quarters:</label>
+				<input type="text" id="quarters" disabled><br>
+
+				<label>Dimes:</label>
+				<input type="text" id="dimes" disabled><br>
+
+				<label>Nickels:</label>
+				<input type="text" id="nickels" disabled><br>
+
+				<label>Pennies:</label>
+				<input type="text" id="pennies" disabled><br>			
+			
+        </div>
+        <div class="box-footer">
+          
+        </div> 
+      </div>
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper change calculator -->
+
+
+<!-- Content Wrapper Change Calculator. -->
+<div class="content-wrapper" id="wrappermyfriend" style="display:none;">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      My Friend
+    </h1>
+  </section>
+
+  <!-- Main content -->
+  <section class="content container-fluid">
+
+    <!--------------------------
+      | My Friend Content Here |
+      -------------------------->
+      <!-- /.box-header -->
+      <div class="box box-warning">
+        <div class="box-header with-border">
+          <h3 class="box-title">My Friend</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+		
+		<form id="frm_myfriend">
+        <label>My Friend's Name:</label>
+				<input type="text" id="friend_name" required placeholder="Your friend's name" title="Please provide a name.">
+				<span class='message bg bg-danger'></span><br>
+		<label>My Friend's Phone Number:</label>
+				<input type="text" id="friend_phone" required placeholder="999999999" pattern="^\d{10}$" title="Please provide a 10 digit phone number." >
+				<span class='message bg bg-danger'></span><br>
+		<label>&nbsp;</label>
+			<input type="button" value="Save" id="btn_friend_save" class="btn btn-primary"><span class='message bg bg-success'></span><br>
+		<br><br>
+			
+        </div>
+        <div class="box-footer">
+          
+        </div> 
+      </div>
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper my friend -->
+
+
+  
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+      MIS2402
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2018 <a href="http://www.temple.edu">Temple University</a>.</strong> All rights reserved.
+  </footer>
+
+</div>
+<!-- ./wrapper -->
+
+</body>
+</html>
